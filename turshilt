@@ -1,0 +1,21 @@
+// Product.js
+export class Product {
+  constructor(id, name, category, brand, price) {
+    this.id = id;
+    this.name = name;
+    this.category = category;
+    this.brand = brand;
+    this.price = price;
+  }
+
+  render() {
+    return `
+      <div class="product">
+        <h2>${this.name}</h2>
+        <p>Category: ${this.category}</p>
+        <p>Brand: ${this.brand}</p>
+        <p>Price: $${this.price}</p>
+      </div>
+    `;
+  }
+}
